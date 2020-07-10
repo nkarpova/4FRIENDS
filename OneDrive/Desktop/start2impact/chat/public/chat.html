@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h3 class="four">4FRIENDS</h3>
+       <a href="index.html" class="out"> Leave Room</a>
+      </header>
+      <div class="block1">
+        <div class="info-panel">
+          <p style="color: #ec32a8;"><img src="icons/conversation.svg" alt="icon">&nbsp;&nbsp;Room name:</p>
+          <p id="room-name"></p>
+          <p style="color: #ec32a8;"><img src="icons/team.svg" alt="icon">&nbsp;&nbsp;Users online:</p>
+          <ul id="users">  </ul>
+        </div>
+
+        <div class="chat-messages">
+          <div id="feedback"> </div>
+        </div>
+      </div>
+
+      <div class="chat-form-container">
+        <form id="chat-form">
+        <input class="message-row" id="msg" type="text" name="message" placeholder="Enter message" required>
+
+            <button class="button2" id="btn" type="submit" name="button">Send</button>
+         </form>
+      </div>
+    </main>
+
+       <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script  src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+     <script src="js/main.js"></script>
+  </body>
+</html>
